@@ -42,6 +42,7 @@ class FrameworkClient extends Client {
 
   async start(token) {
     console.log('BOOT | Preparing to login...');
+    console.log(require("../../../package.json").version)
     const time = Date.now();
 
     const localCommands = getLocalCommands(this.config.commandsPath);
